@@ -33,7 +33,7 @@ header li {
     display: inline-block;
 }
 
-header div {
+.center-header {
     width: 80%;
     margin: 0 auto;
 }
