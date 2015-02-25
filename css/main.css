@@ -1,0 +1,117 @@
+ol, 
+ul {
+    list-style: none outside none;
+}
+
+html, body, div, 
+span, object, iframe, 
+h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, 
+abbr, acronym, address, 
+big, cite, code, del, dfn, 
+em, img, ins, kbd, q, samp, 
+small, strike, strong, sub, 
+sup, tt, var, b, u, i, dl, dt, 
+dd, ol, ul, li, fieldset, form, 
+label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: Tahoma, Geneva, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsla(228, 21%, 15%, 1);
+    color: hsla(197, 39%, 50%, 1);
+}
+
+header li {
+    display: inline-block;
+}
+
+header div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header a {
+    text-decoration: none;
+    color: hsla(197, 39%, 50%, 1);
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-item:hover {
+    border-bottom: 4px solid hsla(202, 79%, 54%, 1);
+}
+
+.right {
+    float: right;
+}
+
+.inline {
+    display: inline;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+}
+
+.bg-video-label {
+    width: 35%;
+    color: #d2dee2;        
+    text-shadow: 2px 3px 1px rgba(64, 64, 64, 1);
+}
+
+.solutions {
+    position: absolute;
+    top: 125px;
+    left: 110px;
+}
+
+.solutions h2, .shopping h2 {
+    font-size: 36px;
+}
+
+.solutions p, .shopping p {
+    font-size: 28px;
+}
+.shopping {
+    position: absolute;
+    right: 75px;
+    top: 450px;
+}
+
+footer {
+    font-size: 13px;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: hsla(200, 35%, 80%, 1);
+    padding: 7px 0 7px 0;
+}
+
+address {
+    text-align: center;
+}
+
+footer p {
+    color: #577391;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #25282a;
+}
