@@ -22,11 +22,11 @@ tbody, tfoot, thead, tr, th, td {
 }
 
 header {
-    font-family: Tahoma, Geneva, sans-serif;
+    font-family: "Varela Round", sans-serif;
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid hsla(228, 21%, 15%, 1);
-    color: hsla(197, 39%, 50%, 1);
+    /*color: hsla(197, 39%, 50%, 1);*/
 }
 
 header li {
@@ -40,11 +40,15 @@ header li {
 
 header a {
     text-decoration: none;
-    color: hsla(197, 39%, 50%, 1);
+    /*color: hsla(197, 39%, 50%, 1);*/
     width: 100%;
     height: 100%;
     display: block;
     padding-bottom: 10px;
+}
+
+main {
+    font-family: "Varela Round", sans-serif;
 }
 
 .nav-item {
@@ -53,7 +57,7 @@ header a {
 }
 
 .nav-item:hover {
-    border-bottom: 4px solid hsla(202, 79%, 54%, 1);
+    border-bottom: 4px solid hsla(202, 25%, 25%, 1);
 }
 
 .right {
@@ -71,34 +75,43 @@ header a {
 
 .bg-video-label {
     width: 35%;
-    color: #d2dee2;        
-    text-shadow: 2px 3px 1px rgba(64, 64, 64, 1);
+    color: #d2dee2;
+    text-shadow: 2px 3px 1px hsla(200, 10%, 25%, 1);
 }
 
 .solutions {
     position: absolute;
     top: 125px;
     left: 110px;
+    text-align: left;
+    z-index: 1;
 }
 
-.solutions h2, .shopping h2 {
-    font-size: 36px;
-}
-
-.solutions p, .shopping p {
-    font-size: 28px;
-}
 .shopping {
     position: absolute;
     right: 75px;
-    top: 450px;
+    top: 525px;
+    text-align: right;
+    z-index: 1;
+}
+
+.solutions h2, 
+.shopping h2 {
+    font-size: 20px;
+}
+
+.solutions p, 
+.shopping p {
+    font-size: 28px;
 }
 
 footer {
     font-size: 13px;
-    font-family: Tahoma, Geneva, sans-serif;
-    background-color: hsla(200, 35%, 80%, 1);
+    font-family: "Varela Round", sans-serif;
+    font-style: normal;
+    /*background-color: hsla(200, 35%, 80%, 1);*/
     padding: 7px 0 7px 0;
+    border-top: 1px solid hsla(228, 21%, 15%, 1);
 }
 
 address {
@@ -106,12 +119,23 @@ address {
 }
 
 footer p {
-    color: #577391;
+    /*color: #577391;*/
     font-weight: bold;
+    font-style: normal;
 }
 
 footer a {
     text-decoration: none;
     font-weight: bold;
+    /*color: #25282a;*/
+}
+
+a {
     color: #25282a;
+}
+
+video {
+  filter: gray; /* IE6-9 */
+  filter: grayscale(1); /* Firefox 35+ */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
