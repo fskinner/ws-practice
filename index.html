@@ -1,19 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="pt-br">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>TM Assessoria de Sistemas</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
 
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -25,11 +20,11 @@
                 <h1 class="inline">TM Assessoria de Sistemas</h1>
                 <nav class="right" role="navigation">
                     <ul>
-                        <li class="nav-item"><a href="#empresa">Empresa</a></li>
-                        <li class="nav-item"><a href="#usuarios">Usuários</a></li>
-                        <li class="nav-item"><a href="#produtos">Produtos</a></li>
-                        <li class="nav-item"><a href="#noticias">Notícias</a></li>
-                        <li class="nav-item"><a href="#contato">Contato</a></li>
+                        <li class="nav-item modal-trigger"><a href="#empresa">Empresa</a></li>
+                        <li class="nav-item modal-trigger"><a href="#usuarios">Usuários</a></li>
+                        <li class="nav-item modal-trigger"><a href="#produtos">Produtos</a></li>
+                        <li class="nav-item modal-trigger"><a href="#noticias">Notícias</a></li>
+                        <li class="nav-item modal-trigger"><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </div> 
@@ -51,7 +46,7 @@
             </section>
             
             <section id="empresa" class="about-section">
-                <h2>Soluções de tecnologia</h2>
+                <h2 class="">Soluções de tecnologia</h2>
                 <div class="about-center">
                     <p class="left">A TM é uma provedora de soluções de tecnologia da informação para Shopping Center.
                     Seu objetivo é garantir agilidade nas informações operacionais e gerenciais que permitem o acompanhamento constante da performance do negócio.</p>
@@ -59,6 +54,17 @@
                 </div>
                 <p class="clear about-closing">A experiência da equipe, permite oferecer o conhecimento necessário para prestar um serviço de excelente nível, a altura da demanda do setor.</p>
             </section>
+
+            <div id="modal" class="modal-layer">
+                <div class="modal-dialog">
+                    <p id="modal-close" class="modal-close">x</p>
+                    <p>Prezado cliente, desculpe o transtorno</p>
+                    <p>Estamos construindo um novo site</p>
+                    
+                    <p>Contatos pelo telefone <span class="bold">(21) 2252-3052</span> ou
+                    através do e-mail <a class="bold" href="mailto:contato@tmassessoria.com.br">contato@tmassessoria.com.br</a></p>
+                </div>
+            </div>
         </main>
 
         <footer>
