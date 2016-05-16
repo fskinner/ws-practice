@@ -1,17 +1,17 @@
 (function() {
-	function showModal(){
-		document.getElementById("modal").className = "modal-layer show-modal";
-	}
+  function showModal(){
+    document.getElementById("modal").className = "modal-layer show-modal";
+  }
 
-	function hideModal(){
-		document.getElementById("modal").className = "modal-layer";
-	}
+  function hideModal(){
+    document.getElementById("modal").className = "modal-layer";
+  }
 
-	var menuOptions = document.getElementsByClassName("modal-trigger");
+  var menuOptions = document.getElementsByClassName("modal-trigger");
 
-	for(var i = 0; i < menuOptions.length; i++){
-		menuOptions[i].addEventListener("click", showModal);
-	}
+  for(var i = 0; i < menuOptions.length; i++){
+    menuOptions[i].addEventListener("click", showModal);
+  }
 
-	document.getElementById("modal-close").addEventListener("click", hideModal);
+  document.getElementById("modal-close").addEventListener("click", hideModal);
 })();
