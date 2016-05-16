@@ -12,11 +12,23 @@
       display: none;
     }
 
+    .bg-video-label {
+      font-size: 12px;
+      color: #25282a;
+      text-shadow: none;
+    }
+
     .overlay-video-left-text {
       position: relative;;
     }
 
     .overlay-video-right-text {
       position: relative;
+      margin-top: 2em;
+    }
+
+    .about-separator {
+      border-left: 0px;
+      margin-top: 2em;
     }
 }

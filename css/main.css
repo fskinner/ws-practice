@@ -41,7 +41,7 @@ main {
 }
 
 .nav-item:hover {
-  border-bottom: 4px solid hsla(202, 25%, 25%, 1);
+  /*border-bottom: 4px solid #45889b;*/
   font-weight: bolder;
 }
 
@@ -52,6 +52,10 @@ main {
   height: 100%;
   display: block;
   padding-bottom: 10px;
+}
+
+.nav-item a:hover {
+  color: #45889B;
 }
 
 .right {
@@ -94,6 +98,7 @@ main {
 
 .bg-video-label {
   width: 90%;
+  font-size: 22px;
   color: #efefef;
   text-shadow: 2px 3px 1px hsla(200, 10%, 25%, 1);
   height: inherit;
@@ -141,7 +146,8 @@ footer {
     font-family: "Varela Round", sans-serif;
     font-style: normal;
     padding: 7px 0 7px 0;
-    border-top: 1px solid hsla(228, 21%, 15%, 1);
+    border-top: 1px solid #ccc;
+    color: #45889b;
 }
 
 address {
