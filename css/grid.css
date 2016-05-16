@@ -1,0 +1,22 @@
+@media only screen and (max-width: 550px) {
+    .col-md-1,
+    .col-md-4,
+    .col-md-6,
+    .col-md-8,
+    .col-md-12 {
+        width: auto;
+        float: none;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .overlay-video-left-text {
+      position: relative;;
+    }
+
+    .overlay-video-right-text {
+      position: relative;
+    }
+}
