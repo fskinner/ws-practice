@@ -9,11 +9,15 @@
     }
 
     nav {
+      padding-left: 5px;
+    }
+
+    div.menu {
       display: none;
     }
 
     .bg-video-label {
-      font-size: 12px;
+      font-size: 16px;
       color: #25282a;
       text-shadow: none;
     }

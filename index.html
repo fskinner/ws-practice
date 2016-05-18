@@ -19,15 +19,15 @@
           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-    <header class="row" role="banner">
-      <div class="col-xs-4 col-md-4">
+    <nav role="banner">
+      <div class="col-xs-4 col-md-4 logo">
         <h1>
           <a href="#">
             <img src="images/logotm.jpg" alt="TM Assessoria de Sistemas" />
           </a>
         </h1>
       </div>
-      <nav class="col-xs-8 col-md-8 text-right" role="navigation">
+      <div class="menu col-xs-8 col-md-8 text-right" role="navigation">
         <ul>
           <li class="nav-item modal-trigger"><a href="#empresa">Empresa</a></li>
           <li class="nav-item modal-trigger"><a href="#usuarios">Usuários</a></li>
@@ -35,34 +35,31 @@
           <li class="nav-item modal-trigger"><a href="#noticias">Notícias</a></li>
           <li class="nav-item modal-trigger"><a href="#contato">Contato</a></li>
         </ul>
-      </nav>
+      </div>
+    </nav>
+
+    <header class="row header-paralax">
+      <div class="col-sm-12">
+        <img src="images/tech.jpg" />
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 overlay-video overlay-top">
+            <p class="bg-video-label">
+              Focados em desenvolver aplicativos de acordo com as necessides do cliente,
+              com ferramentas modernas e de ampla utilização.
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-12 overlay-video overlay-mid">
+            <p class="bg-video-label">
+              Contamos com o diferencial competitivo de nosso quadro de consultores,
+              com experiência de mais de 15 (quinze) anos em desenvolvimento de sistemas.
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main role="main">
-      <section class="row">
-        <div class="col-sm-12">
-          <video preload="auto" autoplay="" loop="" class="bg-video">
-            <source src="videos/vd01.webm" type="video/webm">
-            <source src="videos/vd01.mp4" type="video/mp4">
-          </video>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 overlay-video-left-text">
-              <p class="bg-video-label text-left">
-                Focados em desenvolver aplicativos de acordo com as necessides do cliente,
-                com ferramentas modernas e de ampla utilização.
-              </p>
-            </div>
-            <div class="col-xs-6 col-sm-6 overlay-video-right-text">
-              <p class="bg-video-label text-right">
-                Contamos com o diferencial competitivo de nosso quadro de consultores,
-                com experiência de mais de 15 (quinze) anos em desenvolvimento de sistemas.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="empresa" class="about-section row">
         <h2 class="col-md-12">Soluções de tecnologia</h2>
         <div class="row about">
@@ -94,14 +91,14 @@
           através do e-mail <a class="bold" href="mailto:contato@tmassessoria.com.br">contato@tmassessoria.com.br</a></p>
         </div>
       </div>
-    </main>
 
-    <footer class="row">
-      <address class="col-xs-12 col-md-12">
-        <p>R. Uruguaiana, nº 10 | 12º andar | sl.1201 | Centro | Rio de Janeiro | Brasil | Tel: (21)2252-3052</p>
-        <p><a href="mailto:contato@tmassessoria.com.br">contato@tmassessoria.com.br</a></p>
-      </address>
-    </footer>
+      <footer class="row">
+        <address class="col-xs-12 col-md-12">
+          <p>R. Uruguaiana, nº 10 | 12º andar | sl.1201 | Centro | Rio de Janeiro | Brasil | Tel: (21)2252-3052</p>
+          <p><a href="mailto:contato@tmassessoria.com.br">contato@tmassessoria.com.br</a></p>
+        </address>
+      </footer>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>

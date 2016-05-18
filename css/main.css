@@ -21,15 +21,28 @@ tbody, tfoot, thead, tr, th, td {
   padding: 0;
 }
 
-header {
-  font-family: "Varela Round", sans-serif;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #ccc;
+nav {
+  font-family: 'Open Sans',sans-serif;
+  background: #fff;
+  padding: .625rem 1.25rem;
+  box-shadow: 0 -3px 9px #000;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
-main {
-  font-family: "Varela Round", sans-serif;
+nav .logo {
+  padding-left: 0;
+}
+
+.header-paralax {
+  font-family: 'Open Sans',sans-serif;
+  background-image: url('../images/tech.jpg');
+  background-size: cover;
+  width: 100%;
+  position: fixed;
+  height: 600px;
+  top: 53px;
 }
 
 .nav-item {
@@ -41,8 +54,8 @@ main {
 }
 
 .nav-item:hover {
-  /*border-bottom: 4px solid #45889b;*/
-  font-weight: bolder;
+  /*border-bottom: 2px solid #45889b;*/
+  /*font-weight: bolder;*/
 }
 
 .nav-item a {
@@ -56,6 +69,14 @@ main {
 
 .nav-item a:hover {
   color: #45889B;
+}
+
+main {
+  font-family: 'Open Sans',sans-serif;
+  background: #E7E3DA;
+  position: relative;
+  top: 600px;
+  overflow-x: hidden;
 }
 
 .right {
@@ -74,33 +95,30 @@ main {
   display: inline;
 }
 
-.overlay-video-left-text {
+.overlay-video {
   position: absolute;
-  top: 1em;
-  left: 1em;
-  text-align: left;
-  z-index: 1;
-  height: 90%;
-}
-
-.overlay-video-right-text {
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-  text-align: right;
+  text-align: center;
   z-index: 1;
 }
 
-.bg-video {
-  width: 100%;
-  height: 100%;
+.overlay-top {
+  top: 2em;
+}
+
+.overlay-mid {
+  top: 16em;
 }
 
 .bg-video-label {
-  width: 90%;
-  font-size: 22px;
+  font-size: 26px;
+  width: 55%;
+  margin: 2em auto;
   color: #efefef;
   text-shadow: 2px 3px 1px hsla(200, 10%, 25%, 1);
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  /*text-shadow: 3px 3px #24809c;*/
   height: inherit;
   overflow: hidden;
 }
@@ -119,7 +137,8 @@ main {
   text-align: center;
   font-size: 34px;
   text-transform: uppercase;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
+  color: #45889B;
 }
 
 .about {
@@ -138,7 +157,7 @@ main {
 
 footer {
     font-size: 13px;
-    font-family: "Varela Round", sans-serif;
+    font-family: 'Open Sans',sans-serif;
     font-style: normal;
     padding: 7px 0 7px 0;
     border-top: 1px solid #ccc;
