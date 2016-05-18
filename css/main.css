@@ -79,22 +79,6 @@ main {
   overflow-x: hidden;
 }
 
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.clear {
-  clear: both;
-}
-
-.inline {
-  display: inline;
-}
-
 .overlay-video {
   position: absolute;
   text-align: center;
