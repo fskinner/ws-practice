@@ -118,7 +118,6 @@ nav h1 {
 
 .nav-item:hover {
   border-bottom: 1px solid #45889b;
-  font-weight: bolder;
 }
 
 .nav-item a {
@@ -145,6 +144,10 @@ main {
   background: #e7e3da;
   position: relative;
   overflow-x: hidden;
+}
+
+.about-section p {
+  margin-bottom: 40px;
 }
 
 .bg-video-label {
