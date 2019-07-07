@@ -1,61 +1,124 @@
 ol,
 ul {
-    list-style: none outside none;
+  list-style: none outside none;
 }
 
-html, body, div,
-span, object, iframe,
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, a,
-abbr, acronym, address,
-big, cite, code, del, dfn,
-em, img, ins, kbd, q, samp,
-small, strike, strong, sub,
-sup, tt, var, b, u, i, dl, dt,
-dd, ol, ul, li, fieldset, form,
-label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   border: 0 none;
   font-size: 100%;
   margin: 0;
   padding: 0;
 }
 
-nav {
-  font-family: 'Open Sans',sans-serif;
+nav.row {
+  font-family: "Open Sans", sans-serif;
   background: #fff;
-  padding: .625rem 1.25rem;
+  padding: 0.625rem 1.25rem;
   box-shadow: 0 -3px 9px #000;
-  position: fixed;
   width: 100%;
-  z-index: 10;
+  height: 80px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 nav .logo {
   padding-left: 0;
 }
 
+nav h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .header-paralax {
-  font-family: 'Open Sans',sans-serif;
-  background-image: url('../images/tech2.jpg');
+  font-family: "Open Sans", sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ");
   background-size: cover;
   width: 100%;
-  position: fixed;
   height: 600px;
-  top: 53px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.parallax-overlay {
+  background: rgba(39, 62, 84, 0.82);
+  overflow: hidden;
+  height: 100%;
+  z-index: 2;
+}
+
+.parallax-height {
+  height: 600px;
 }
 
 .nav-item {
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-  margin-left: 0.5%;
-  margin-right: 0.5%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
   display: inline-block;
 }
 
 .nav-item:hover {
-  /*border-bottom: 2px solid #45889b;*/
-  /*font-weight: bolder;*/
+  border-bottom: 1px solid #45889b;
+  font-weight: bolder;
 }
 
 .nav-item a {
@@ -65,46 +128,40 @@ nav .logo {
   height: 100%;
   display: block;
   padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.menu ul {
+  margin: 0 auto;
 }
 
 .nav-item a:hover {
-  color: #45889B;
+  color: #45889b;
+  text-decoration: none;
 }
 
 main {
-  font-family: 'Open Sans',sans-serif;
-  background: #E7E3DA;
+  font-family: "Open Sans", sans-serif;
+  background: #e7e3da;
   position: relative;
-  top: 600px;
   overflow-x: hidden;
 }
 
-.overlay-video {
-  position: absolute;
-  text-align: center;
-  z-index: 1;
-}
-
-.overlay-top {
-  top: 2em;
-}
-
-.overlay-mid {
-  top: 16em;
-}
-
 .bg-video-label {
-  font-size: 26px;
-  width: 55%;
-  margin: 2em auto;
-  color: #efefef;
-  text-shadow: 2px 3px 1px hsla(200, 10%, 25%, 1);
-  font-family: 'Open Sans',sans-serif;
-  font-weight: 800;
+  font-size: 18px;
+  width: 75%;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  /*text-shadow: 3px 3px #24809c;*/
-  height: inherit;
-  overflow: hidden;
+  text-align: center;
+}
+
+.main-label {
+  font-size: 28px;
+  font-weight: 600;
+  color: #a6c8d2;
 }
 
 .solutions h2,
@@ -113,21 +170,21 @@ main {
 }
 
 .about-section {
-  padding-top: 7em;
-  padding-bottom: 7em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .about-section h2 {
   text-align: center;
   font-size: 34px;
   text-transform: uppercase;
-  margin-bottom: 2em;
-  color: #45889B;
+  margin-bottom: 0.5em;
+  color: #45889b;
 }
 
 .about {
   margin-bottom: 1em;
-  padding: 5em;
+  padding-top: 3.5em;
 }
 
 .about-separator {
@@ -140,44 +197,46 @@ main {
 }
 
 footer {
-    font-size: 13px;
-    font-family: 'Open Sans',sans-serif;
-    font-style: normal;
-    padding: 7px 0 7px 0;
-    border-top: 1px solid #ccc;
-    color: #45889b;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  padding: 2em 0 1em 0;
+  border-top: 1px solid #ccc;
+  color: #45889b;
+  background-color: #fff;
 }
 
 address {
-    text-align: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 footer p {
-    font-weight: bold;
-    font-style: normal;
+  font-weight: bold;
+  font-style: normal;
 }
 
 footer a {
-    text-decoration: none;
-    font-weight: bold;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a {
-    color: #25282a;
+  color: #25282a;
 }
 
 .modal-layer {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: visibility 0s ease 0.5s, opacity 0.5s ease;
-    transition: visibility 0s ease 0.5s, opacity 0.5s ease;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: hsla(204, 6%, 29%, 0.7);
-    z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s ease 0.5s, opacity 0.5s ease;
+  transition: visibility 0s ease 0.5s, opacity 0.5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(204, 6%, 29%, 0.7);
+  z-index: 1;
 }
 
 .modal-dialog {
@@ -194,43 +253,43 @@ a {
   padding-top: 40px;
   font-size: 24px;
   -webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
-  -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+  -moz-box-sizing: border-box; /* Firefox 1 - 28 */
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .modal-dialog p {
-    text-align: center;
+  text-align: center;
 }
 
 .modal-dialog p:last-child {
-    text-align: center;
-    margin-top: 80px;
-    font-size: 16px;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 16px;
 }
 
 .modal-dialog a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .modal-dialog a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .modal-close {
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    cursor: pointer;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
 }
 
 .show-modal {
-    visibility:visible;
-    opacity: 1;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
